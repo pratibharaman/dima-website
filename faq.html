@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FAQ</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="navbar-brand"
+        >Occupational Therapy with Dima</a
+      >
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="faq.html">F.A.Q.</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <div class="faq-container">
+      <h1 class="heading">Frequently Asked Questions</h1>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          What is occupational therapy? <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Answer goes here.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Who can benefit from OT? <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Answer goes here.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Do I need a referral? <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Answer goes here.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Where do sessions take place? <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Answer goes here.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Do you accept insurance? <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Answer goes here.</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.querySelectorAll(".faq-question").forEach((button) => {
+        button.addEventListener("click", () => {
+          const item = button.parentElement;
+          const isOpen = item.classList.contains("open");
+
+          // Close all
+          document.querySelectorAll(".faq-item").forEach((i) => {
+            i.classList.remove("open");
+            i.querySelector(".faq-icon").textContent = "+";
+          });
+
+          // Open clicked if it was closed
+          if (!isOpen) {
+            item.classList.add("open");
+            item.querySelector(".faq-icon").textContent = "−";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
