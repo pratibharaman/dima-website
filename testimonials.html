@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonials</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="navbar-brand"
+        >Occupational Therapy with Dima</a
+      >
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <div class="navbar-links" id="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="faq.html">F.A.Q.</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <div class="testimonials-container">
+      <div class="testimonials-header">
+        <h1 class="heading">What Families Are Saying</h1>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card testimonial-large">
+          <div class="quote-mark">"</div>
+          <p>
+            In addition to being an incredibly effective OT provider, Dima also
+            has a wonderful, bubbly personality that my son just adored. He was
+            always so excited to start his sessions with her!
+          </p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="quote-mark">"</div>
+          <p>
+            Dima was incredibly helpful at determining what my son's sensory
+            needs were, and how we could help him regulate his emotions
+            throughout the day.
+          </p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="quote-mark">"</div>
+          <p>
+            One of our goals was to help my son use utensils more effectively.
+            Dima worked with my son at the dinner table, and provided me with
+            clear instructions and activities I could work on with him outside
+            of his therapy sessions. I'm happy to say that my son can now use a
+            fork and spoon perfectly!
+          </p>
+        </div>
+
+        <div class="testimonial-card testimonial-large">
+          <div class="quote-mark">"</div>
+          <p>
+            Dima is a talented therapist who has a beautiful way with our son
+            and a razor sharp mind that combines intuition with a deep clinical
+            understanding. We are so lucky to have her on our team!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleMenu() {
+        const links = document.getElementById("navbar-links");
+        links.classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>

@@ -17,7 +17,8 @@
       <a href="index.html" class="navbar-brand"
         >Occupational Therapy with Dima</a
       >
-      <div class="navbar-links">
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <div class="navbar-links" id="navbar-links">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
@@ -26,6 +27,13 @@
         <a href="contact.html">Contact</a>
       </div>
     </nav>
+
+    <script>
+      function toggleMenu() {
+        const links = document.getElementById("navbar-links");
+        links.classList.toggle("open");
+      }
+    </script>
     <div class="about-container">
       <div class="about-content">
         <div class="about-photo-wrapper">
