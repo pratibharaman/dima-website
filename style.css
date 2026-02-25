@@ -378,55 +378,16 @@ body {
 }
 
 @media (max-width: 768px) {
+  /* Global */
   body {
     font-size: 18px;
   }
 
-  .navbar-brand {
-    font-size: 1.4rem !important;
-  }
-
-  .navbar-links a {
-    font-size: 1.1rem;
-  }
-
   .heading {
     font-size: 2.2rem;
+    padding-top: 30px;
   }
 
-  .about-text p,
-  .about-text ul {
-    font-size: 1.1rem;
-    line-height: 2;
-  }
-
-  .service-block h2 {
-    font-size: 1.6rem;
-  }
-
-  .service-block p,
-  .service-block ul {
-    font-size: 1.1rem;
-  }
-
-  .faq-question {
-    font-size: 1.1rem;
-  }
-
-  .faq-answer p {
-    font-size: 1.1rem;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    font-size: 1.1rem;
-    padding: 14px 16px;
-  }
-
-  .contact-form button {
-    font-size: 1.1rem;
-    width: 100%;
-  }
   /* Navbar */
   .navbar {
     flex-direction: column;
@@ -435,10 +396,18 @@ body {
     padding: 16px 20px;
   }
 
+  .navbar-brand {
+    font-size: 1.4rem !important;
+  }
+
   .navbar-links {
     flex-wrap: wrap;
     justify-content: center;
     gap: 12px;
+  }
+
+  .navbar-links a {
+    font-size: 1.1rem;
   }
 
   /* Homepage */
@@ -462,12 +431,11 @@ body {
     font-size: 1.1rem;
   }
 
-  .heading {
-    font-size: 1.8rem;
-    padding-top: 30px;
+  /* About */
+  .about-container {
+    padding: 40px 20px;
   }
 
-  /* About */
   .about-content {
     flex-direction: column;
     align-items: center;
@@ -485,11 +453,17 @@ body {
     width: 100%;
   }
 
-  .about-container {
-    padding: 40px 20px;
+  .about-text p,
+  .about-text ul {
+    font-size: 1.1rem;
+    line-height: 2;
   }
 
   /* Services */
+  .services-container {
+    padding: 40px 20px;
+  }
+
   .service-block {
     flex-direction: column;
     align-items: flex-start;
@@ -499,8 +473,13 @@ body {
     min-width: unset;
   }
 
-  .services-container {
-    padding: 40px 20px;
+  .service-block h2 {
+    font-size: 1.6rem;
+  }
+
+  .service-block p,
+  .service-block ul {
+    font-size: 1.1rem;
   }
 
   /* FAQ */
@@ -514,8 +493,27 @@ body {
     position: static;
   }
 
-  /* Contact form */
+  .faq-question {
+    font-size: 1.1rem;
+  }
+
+  .faq-answer p {
+    font-size: 1.1rem;
+  }
+
+  /* Contact */
   .contact-form {
     padding: 0 20px 40px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1.1rem;
+    padding: 14px 16px;
+  }
+
+  .contact-form button {
+    font-size: 1.1rem;
+    width: 100%;
   }
 }
