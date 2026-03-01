@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="navbar-brand"
+        >Occupational Therapy with Dima</a
+      >
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <div class="navbar-links" id="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="faq.html">F.A.Q.</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <div class="contact-page-container">
+      <h1 class="heading">Get in Touch</h1>
+      <p class="contact-intro">
+        Please feel free to reach out with any questions you may have about
+        occupational therapy services! I will do my best to get back to you
+        within 48 hours.
+      </p>
+
+      <div class="contact-info-row">
+        <a href="tel:9293140736" class="contact-info-item">
+          <i class="fa fa-phone"></i>
+          <span>(929) 314-0736</span>
+        </a>
+        <a
+          href="mailto:dima.occupationaltherapy@gmail.com"
+          class="contact-info-item"
+        >
+          <i class="fa fa-envelope"></i>
+          <span>dima.occupationaltherapy@gmail.com</span>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/dimathabit-otrl/"
+          target="_blank"
+          class="contact-info-item"
+        >
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+
+      <div class="contact-form">
+        <form action="https://formspree.io/f/xxxxxxxx" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="tel" name="phone" placeholder="Your Phone Number" />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            rows="6"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <a href="index.html" class="footer-brand-name"
+          >Occupational Therapy with Dima</a
+        >
+        <div class="footer-contact-row">
+          <a href="mailto:dima.occupationaltherapy@gmail.com"
+            ><i class="fa fa-envelope"></i
+          ></a>
+          <a href="tel:9293140736"><i class="fa fa-phone"></i></a>
+          <a href="https://www.linkedin.com/in/dimathabit-otrl/" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <span><i class="fa fa-location-dot"></i> Brooklyn, NY</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Dima Thabit, OTR/L. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const links = document.getElementById("navbar-links");
+        links.classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>
