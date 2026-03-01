@@ -44,7 +44,7 @@ body {
 .nav-links a {
   font-family: "Bitter", serif;
   font-size: 1.2rem;
-  font-weight: 200;
+  font-weight: 300;
   text-decoration: none;
   color: #eff483;
   background-color: #184027;
@@ -52,7 +52,7 @@ body {
   padding: 10px 24px;
   border-radius: 50px;
   display: inline-block;
-  width: 150px;
+  width: 180px;
   text-align: center;
   transition: all 0.3s ease;
 }
@@ -84,7 +84,7 @@ body {
 }
 
 .about-container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 60px 40px;
 }
@@ -97,14 +97,18 @@ body {
 }
 
 .about-photo {
-  width: 350px;
+  width: 300px;
   flex-shrink: 0;
   border-radius: 8px;
   object-fit: cover;
   object-position: top;
   margin-top: 60px;
-  position: sticky;
-  top: 80px;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 0;
+  text-align: left;
 }
 
 .about-photo-wrapper {
@@ -112,12 +116,6 @@ body {
   flex-shrink: 0;
   position: sticky;
   top: 80px;
-}
-
-.about-text {
-  flex: 1;
-  min-width: 0;
-  text-align: left;
 }
 
 .about-text p {
@@ -225,7 +223,7 @@ body {
 }
 
 .faq-container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 60px 40px;
   text-align: left;
@@ -285,22 +283,9 @@ body {
 
 /* Testimonials */
 .testimonials-container {
-  max-width: 600px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 60px 40px;
-}
-
-.testimonials-header {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.testimonials-subheading {
-  font-family: "Bitter", serif;
-  font-weight: 300;
-  font-size: 1.1rem;
-  color: #555;
-  margin-top: 8px;
 }
 
 .masonry-grid {
@@ -415,13 +400,6 @@ body {
   text-align: center;
 }
 
-.form-heading {
-  font-family: "Shrikhand", serif;
-  color: #184027;
-  font-size: 1.8rem;
-  margin-bottom: 30px;
-}
-
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -465,7 +443,7 @@ body {
 
 /* Contact Page */
 .contact-page-container {
-  max-width: 700px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 60px 40px;
   text-align: center;
@@ -549,6 +527,10 @@ body {
   opacity: 0.7;
 }
 
+.footer-contact-row i {
+  margin-right: 10px;
+}
+
 .footer-bottom {
   text-align: center;
   padding-top: 16px;
@@ -569,8 +551,8 @@ body {
   }
 
   .heading {
-    font-size: 2.2rem;
-    padding-top: 30px;
+    font-size: 2rem;
+    padding: 20px;
   }
 
   /* Navbar */
@@ -584,7 +566,7 @@ body {
 
   .navbar-brand {
     font-size: 1.2rem !important;
-    text-align: center;
+    text-align: left;
     flex: 1;
   }
 
@@ -638,28 +620,29 @@ body {
   .nav-links a {
     width: 100%;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   /* About */
   .about-container {
-    padding: 20px;
+    padding: 30px;
   }
 
   .about-content {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .about-text .heading {
     text-align: left;
+    margin-top: 0;
+    margin-bottom: 6px;
   }
 
   .about-photo {
     width: 100%;
+    max-width: 400px;
     margin-top: 0;
-    position: static;
-    border-radius: 8px;
   }
 
   .about-text {
@@ -720,10 +703,6 @@ body {
     columns: 1;
   }
 
-  .testimonials-container {
-    padding: 40px 20px;
-  }
-
   /* Contact */
   .contact-form {
     padding: 20;
@@ -732,13 +711,13 @@ body {
 
   .contact-form input,
   .contact-form textarea {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     padding: 14px 16px;
     width: 100%;
   }
 
   .contact-form button {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     width: 100%;
   }
 
