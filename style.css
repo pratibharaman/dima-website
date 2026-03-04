@@ -20,6 +20,7 @@ body {
 
 .home-heading {
   padding-top: 100px;
+  padding: 40px;
 }
 
 .hero {
@@ -98,26 +99,24 @@ body {
 }
 
 .about-container {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 60px 40px;
-  overflow: hidden;
+  padding: 80px 40px;
 }
 
 .about-content {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 40px;
+  text-align: left;
 }
 
 .about-photo {
   width: 300px;
-  flex-shrink: 0;
+  float: left;
+  margin-right: 40px;
+  margin-bottom: 10px;
+  margin-top: 90px;
   border-radius: 8px;
   object-fit: cover;
   object-position: top;
-  margin-top: 0 !important;
 }
 
 .about-text {
@@ -236,7 +235,7 @@ body {
 }
 
 .faq-container {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 60px 40px;
   text-align: left;
@@ -304,6 +303,7 @@ body {
 .masonry-grid {
   columns: 3;
   column-gap: 16px;
+  margin-bottom: 80px;
 }
 
 .masonry-card {
@@ -456,7 +456,7 @@ body {
 
 /* Contact Page */
 .contact-page-container {
-  max-width: 600px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 60px 40px;
   text-align: center;
@@ -571,6 +571,11 @@ body {
     color: #184027;
   }
 
+  .home-heading {
+    font-size: 4rem;
+    padding: 20px;
+  }
+
   .heading {
     font-size: 2rem;
     padding: 0;
@@ -653,10 +658,10 @@ body {
   }
 
   .about-photo {
+    float: none;
     width: 100%;
     max-width: 400px;
-    margin-top: 0;
-    align-items: center;
+    margin-right: 0;
   }
 
   .about-text {
