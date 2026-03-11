@@ -407,7 +407,7 @@ body {
 
 .contact-form {
   max-width: 600px;
-  margin: 30px auto;
+  margin: 0 auto;
   padding: 0 40px 60px;
   text-align: center;
 }
@@ -481,17 +481,19 @@ body {
 .contact-info-item {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   font-family: "Bitter", serif;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #184027;
   text-decoration: none;
 }
 
 .contact-info-item i {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #184027;
+  width: 20px;
+  text-align: center;
 }
 
 .contact-info-item:hover {
@@ -722,7 +724,16 @@ body {
 
   /* Testimonials */
   .masonry-grid {
-    columns: 1;
+    grid-template-columns: 1fr;
+  }
+
+  .masonry-card {
+    width: 100%;
+  }
+
+  .photo-card img {
+    width: 100%;
+    height: auto;
   }
 
   /* Contact */
